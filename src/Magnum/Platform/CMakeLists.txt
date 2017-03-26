@@ -97,6 +97,7 @@ if(WITH_ANDROIDAPPLICATION)
 
     # Magnum AndroidApplication target alias for superprojects
     add_library(Magnum::AndroidApplication ALIAS MagnumAndroidApplication)
+    set_target_properties(MagnumAndroidApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # GLFW application
@@ -127,6 +128,7 @@ if(WITH_GLFWAPPLICATION)
 
     # Magnum GlfwApplication target alias for superprojects
     add_library(Magnum::GlfwApplication ALIAS MagnumGlfwApplication)
+    set_target_properties(MagnumGlfwApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # GLUT application
@@ -158,6 +160,7 @@ if(WITH_GLUTAPPLICATION)
 
     # Magnum GlutApplication target alias for superprojects
     add_library(Magnum::GlutApplication ALIAS MagnumGlutApplication)
+    set_target_properties(MagnumGlutApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # SDL2 application
@@ -188,6 +191,7 @@ if(WITH_SDL2APPLICATION)
 
     # Magnum Sdl2Application target alias for superprojects
     add_library(Magnum::Sdl2Application ALIAS MagnumSdl2Application)
+    set_target_properties(MagnumSdl2Application PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # NaCl application
@@ -215,6 +219,7 @@ if(WITH_NACLAPPLICATION)
 
     # Magnum NaClApplication target alias for superprojects
     add_library(Magnum::NaClApplication ALIAS MagnumNaClApplication)
+    set_target_properties(MagnumNaClApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Windowless NaCl application
@@ -243,6 +248,7 @@ if(WITH_WINDOWLESSNACLAPPLICATION)
 
     # Magnum WindowlessNaClApplication target alias for superprojects
     add_library(Magnum::WindowlessNaClApplication ALIAS MagnumWindowlessNaClApplication)
+    set_target_properties(MagnumWindowlessNaClApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # JavaScript and CSS stuff for NaCl
@@ -293,6 +299,7 @@ if(WITH_GLXAPPLICATION)
 
     # Magnum GlxApplication target alias for superprojects
     add_library(Magnum::GlxApplication ALIAS MagnumGlxApplication)
+    set_target_properties(MagnumGlxApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # X/EGL application
@@ -325,6 +332,7 @@ if(WITH_XEGLAPPLICATION)
 
     # Magnum XEglApplication target alias for superprojects
     add_library(Magnum::XEglApplication ALIAS MagnumXEglApplication)
+    set_target_properties(MagnumXEglApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 if(WITH_WINDOWLESSGLXAPPLICATION OR NEED_ABSTRACTXAPPLICATION)
@@ -365,6 +373,7 @@ if(WITH_WINDOWLESSEGLAPPLICATION)
 
     # Magnum WindowlessEglApplication target alias for superprojects
     add_library(Magnum::WindowlessEglApplication ALIAS MagnumWindowlessEglApplication)
+    set_target_properties(MagnumWindowlessEglApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Windowless GLX application
@@ -396,6 +405,7 @@ if(WITH_WINDOWLESSGLXAPPLICATION)
 
     # Magnum WindowlessGlxApplication target alias for superprojects
     add_library(Magnum::WindowlessGlxApplication ALIAS MagnumWindowlessGlxApplication)
+    set_target_properties(MagnumWindowlessGlxApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Windowless iOS application
@@ -432,6 +442,7 @@ if(WITH_WINDOWLESSIOSAPPLICATION)
 
     # Magnum WindowlessIosApplication target alias for superprojects
     add_library(Magnum::WindowlessIosApplication ALIAS MagnumWindowlessIosApplication)
+    set_target_properties(MagnumWindowlessIosApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Windowless WGL application
@@ -461,6 +472,7 @@ if(WITH_WINDOWLESSWGLAPPLICATION)
 
     # Magnum WindowlessWglApplication target alias for superprojects
     add_library(Magnum::WindowlessWglApplication ALIAS MagnumWindowlessWglApplication)
+    set_target_properties(MagnumWindowlessWglApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Windowless Windows/EGL application
@@ -495,6 +507,7 @@ if(WITH_WINDOWLESSWINDOWSEGLAPPLICATION)
 
     # Magnum WindowlessWindowsEglApplication target alias for superprojects
     add_library(Magnum::WindowlessWindowsEglApplication ALIAS MagnumWindowlessWindowsEglApplication)
+    set_target_properties(MagnumWindowlessWindowsEglApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Windowless CGL application
@@ -523,6 +536,7 @@ if(WITH_WINDOWLESSCGLAPPLICATION)
 
     # Magnum WindowlessCglApplication library for superprojects
     add_library(Magnum::WindowlessCglApplication ALIAS MagnumWindowlessCglApplication)
+    set_target_properties(MagnumWindowlessCglApplication PROPERTIES FOLDER "Magnum/Platform")
 endif()
 
 # Abstract X application
@@ -641,6 +655,7 @@ if(NEED_CGLCONTEXT OR WITH_CGLCONTEXT)
 
         # Magnum CglContext target alias for superprojects
         add_library(Magnum::CglContext ALIAS MagnumCglContext)
+        set_target_properties(MagnumCglContext PROPERTIES FOLDER "Magnum/Platform")
     endif()
 endif()
 
@@ -678,6 +693,7 @@ if(NEED_EGLCONTEXT OR WITH_EGLCONTEXT)
 
         # Magnum EglContext target alias for superprojects
         add_library(Magnum::EglContext ALIAS MagnumEglContext)
+        set_target_properties(MagnumEglContext PROPERTIES FOLDER "Magnum/Platform")
     endif()
 endif()
 
@@ -709,6 +725,7 @@ if(NEED_GLXCONTEXT OR WITH_GLXCONTEXT)
 
         # Magnum GlxContext target alias for superprojects
         add_library(Magnum::GlxContext ALIAS MagnumGlxContext)
+        set_target_properties(MagnumGlxContext PROPERTIES FOLDER "Magnum/Platform")
     endif()
 endif()
 
@@ -736,6 +753,7 @@ if(NEED_WGLCONTEXT OR WITH_WGLCONTEXT)
 
         # Magnum WglContext target alias for superprojects
         add_library(Magnum::WglContext ALIAS MagnumWglContext)
+        set_target_properties(MagnumWglContext PROPERTIES FOLDER "Magnum/Platform")
     endif()
 endif()
 
@@ -785,3 +803,4 @@ endif()
 
 # Force IDEs display also all header files and additional files in project view
 add_custom_target(MagnumPlatform SOURCES ${MagnumPlatform_HEADERS} ${MagnumPlatform_FILES})
+set_target_properties(MagnumPlatform PROPERTIES FOLDER "Magnum/Platform")

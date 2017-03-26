@@ -99,3 +99,4 @@ endif()
 
 # Magnum Text target alias for superprojects
 add_library(Magnum::Text ALIAS MagnumText)
+set_target_properties(MagnumText PROPERTIES FOLDER "Magnum/Text")

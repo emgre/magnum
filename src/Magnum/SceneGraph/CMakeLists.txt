@@ -79,6 +79,7 @@ endif()
 add_library(MagnumSceneGraphObjects OBJECT
     ${MagnumSceneGraph_SRCS}
     ${MagnumSceneGraph_HEADERS})
+set_target_properties(MagnumSceneGraphObjects PROPERTIES FOLDER "Magnum/SceneGraph")
 target_include_directories(MagnumSceneGraphObjects PUBLIC $<TARGET_PROPERTY:Magnum,INTERFACE_INCLUDE_DIRECTORIES>)
 if(NOT BUILD_STATIC)
     target_compile_definitions(MagnumSceneGraphObjects PRIVATE "MagnumSceneGraphObjects_EXPORTS")
@@ -127,3 +128,4 @@ endif()
 
 # Magnum SceneGraph target alias for superprojects
 add_library(Magnum::SceneGraph ALIAS MagnumSceneGraph)
+set_target_properties(MagnumSceneGraph PROPERTIES FOLDER "Magnum/SceneGraph")

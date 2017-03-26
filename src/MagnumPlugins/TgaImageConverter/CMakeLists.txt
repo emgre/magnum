@@ -74,3 +74,4 @@ endif()
 
 # Magnum TgaImageConverter target alias for superprojects
 add_library(Magnum::TgaImageConverter ALIAS TgaImageConverter)
+set_target_properties(TgaImageConverter PROPERTIES FOLDER "MagnumPlugins")

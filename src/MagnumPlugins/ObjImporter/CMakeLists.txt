@@ -74,3 +74,4 @@ endif()
 
 # Magnum ObjImporter library for superprojects
 add_library(Magnum:::ObjImporter ALIAS ObjImporter)
+set_target_properties(ObjImporter PROPERTIES FOLDER "MagnumPlugins")

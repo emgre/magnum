@@ -75,3 +75,4 @@ endif()
 
 # Magnum Shaders library for superprojects
 add_library(Magnum::Shaders ALIAS MagnumShaders)
+set_target_properties(MagnumShaders PROPERTIES FOLDER "Magnum/Shaders")

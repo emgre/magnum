@@ -87,3 +87,4 @@ endif()
 
 # Magnum Shapes target alias for superprojects
 add_library(Magnum::Shapes ALIAS MagnumShapes)
+set_target_properties(MagnumShapes PROPERTIES FOLDER "Magnum/Shapes")

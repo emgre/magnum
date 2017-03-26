@@ -91,3 +91,4 @@ endif()
 
 # Magnum MagnumFont target alias for superprojects
 add_library(Magnum::MagnumFont ALIAS MagnumFont)
+set_target_properties(MagnumFont PROPERTIES FOLDER "MagnumPlugins")

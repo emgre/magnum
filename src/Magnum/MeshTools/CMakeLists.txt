@@ -108,3 +108,4 @@ endif()
 
 # Magnum MeshTools target alias for superprojects
 add_library(Magnum::MeshTools ALIAS MagnumMeshTools)
+set_target_properties(MagnumMeshTools PROPERTIES FOLDER "Magnum/MeshTools")

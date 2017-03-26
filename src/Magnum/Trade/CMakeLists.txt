@@ -43,6 +43,7 @@ set(MagnumTrade_HEADERS
 
 # Force IDEs to display all header files in project view
 add_custom_target(MagnumTrade SOURCES ${MagnumTrade_HEADERS})
+set_target_properties(MagnumTrade PROPERTIES FOLDER "Magnum/Trade")
 
 install(FILES ${MagnumTrade_HEADERS} DESTINATION ${MAGNUM_INCLUDE_INSTALL_DIR}/Trade)
 

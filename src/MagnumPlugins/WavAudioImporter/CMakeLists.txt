@@ -78,3 +78,4 @@ endif()
 
 # Magnum WavAudioImporter target alias for superprojects
 add_library(Magnum::WavAudioImporter ALIAS WavAudioImporter)
+set_target_properties(WavAudioImporter PROPERTIES FOLDER "MagnumPlugins")

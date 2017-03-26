@@ -144,3 +144,4 @@ endif()
 
 # Magnum DebugTools target alias for superprojects
 add_library(Magnum::DebugTools ALIAS MagnumDebugTools)
+set_target_properties(MagnumDebugTools PROPERTIES FOLDER "Magnum/DebugTools")

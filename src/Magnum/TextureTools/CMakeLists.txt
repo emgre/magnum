@@ -95,3 +95,4 @@ endif()
 
 # Magnum TextureTools target alias for superprojects
 add_library(Magnum::TextureTools ALIAS MagnumTextureTools)
+set_target_properties(MagnumTextureTools PROPERTIES FOLDER "Magnum/TextureTools")

@@ -232,6 +232,7 @@ set(MagnumMath_SRCS
 
 # Objects shared between main and test library
 add_library(MagnumMathObjects OBJECT ${MagnumMath_SRCS})
+set_target_properties(MagnumMathObjects PROPERTIES FOLDER "Magnum")
 target_include_directories(MagnumMathObjects PUBLIC $<TARGET_PROPERTY:Magnum,INTERFACE_INCLUDE_DIRECTORIES>)
 if(NOT BUILD_STATIC)
     target_compile_definitions(MagnumMathObjects PRIVATE "MagnumMathObjects_EXPORTS")
@@ -310,6 +311,7 @@ if(WITH_OPENGLTESTER)
 
     # Magnum OpenGLTester target alias for superprojects
     add_library(Magnum::OpenGLTester ALIAS MagnumOpenGLTester)
+    set_target_properties(MagnumOpenGLTest PROPERTIES FOLDER "Magnum/OpenGLTester")
 endif()
 
 add_subdirectory(Math)
@@ -376,4 +378,5 @@ endif()
 
 # Magnum library target alias and configure file for superprojects
 add_library(Magnum::Magnum ALIAS Magnum)
+set_target_properties(Magnum PROPERTIES FOLDER "Magnum")
 set(_MAGNUM_CONFIGURE_FILE ${CMAKE_CURRENT_BINARY_DIR}/configure.h CACHE INTERNAL "")

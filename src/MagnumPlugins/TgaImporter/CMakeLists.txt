@@ -75,3 +75,4 @@ endif()
 
 # Magnum TgaImporter target alias for superprojects
 add_library(Magnum::TgaImporter ALIAS TgaImporter)
+set_target_properties(TgaImporter PROPERTIES FOLDER "MagnumPlugins")

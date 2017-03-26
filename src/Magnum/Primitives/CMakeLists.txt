@@ -82,3 +82,4 @@ endif()
 
 # Magnum Primitives target alias for superprojects
 add_library(Magnum::Primitives ALIAS MagnumPrimitives)
+set_target_properties(MagnumPrimitives PROPERTIES FOLDER "Magnum/Primitives")

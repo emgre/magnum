@@ -76,6 +76,7 @@ install(FILES ${MagnumAudio_HEADERS} DESTINATION ${MAGNUM_INCLUDE_INSTALL_DIR}/A
 
 # Magnum Audio target alias for superprojects
 add_library(Magnum::Audio ALIAS MagnumAudio)
+set_target_properties(MagnumAudio PROPERTIES FOLDER "Magnum/Audio")
 
 if(WITH_AL_INFO)
     add_executable(magnum-al-info magnum-al-info.cpp)
